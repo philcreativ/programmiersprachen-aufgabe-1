@@ -112,7 +112,10 @@ A signature can include:
 
 Variable Scope
 
-//Variablen haben einen Gültigkeitsbe- reich (scope)
+/*Variablen haben einen Gültigkeitsbe- reich (scope)
+
+- When a local variable is defined, it is not initialized by the system, you must initialize it yourself. 
+- Global variables are initialized automatically by the system when you define them as follows*/
 
 Global Scope
 /*This referes to the lifespan of the vaiable during runtime and is stored in persistant memory,
@@ -140,5 +143,30 @@ Variables defined within a function or block are said to be local to those funct
 3. Declaring local variables: Local variables are declared inside a block.
 
 */
+
+#include <iostream> 
+
+int var = 3; //global variable that is not being explicitily used
+
+double sum(double a, double b)
+	{
+	 	return a + b; //local variables used in this block
+	}
+
+int square(int var)
+	{
+		return var * var; //local variables used in this block
+	}
+
+
+int main ()
+	{
+		for (int i = 0; i != 100; ++i) { //local variables i used in this block
+		std::cout << "i^2 = " << square(i) << "\n"; 
+		std::cout << "i+i = " << sum(i,i) << "\n";
+	}
+	return 0; 
+}
+
 
 
