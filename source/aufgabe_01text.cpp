@@ -81,11 +81,12 @@ class Example                                 // Declaring a function
 
 
 
-//Aufgabe 1.7--------------------------------------------------------------
+/*Aufgabe 1.7--------------------------------------------------------------
 
 Function Signature. 
+*/
 
-int addition(int a, int b){ return a + b; }
+int sum(int a, int b){ return a + b; }
 /*returnType nameOfFuction(typeofparameter paraName, typeofparameter paraName){body }
 
 A function's signature includes the function's name and the number, 
@@ -93,7 +94,21 @@ order and type of its formal parameters.
 Two overloaded functions must not have the same signature. 
 The return value is not part of a function's signature.
 
+
+A function signature (or type signature, or method signature) 
+defines input and output of functions or methods.
+
+A signature can include:
+
+1. parameters and their types
+2. a return value and type
+3. exceptions that might be thrown or passed back
+4. information about the availability of the method in an object-oriented program 
+(such as the keywords public, static, or prototype).
+
 */
+
+
 
 Variable Scope
 
