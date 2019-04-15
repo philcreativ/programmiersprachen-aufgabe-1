@@ -36,11 +36,12 @@ Zuweisung
 
 /*
 This referes to storing a legal value(wert) in a intialised allocated memory.
-This can only be done after intialisation 
+This can only be done after intialisation, if done without first intialisation 
+there will be an error.
+ 
 Example */ 
 
 int b = 20;  a = b;
-
 
 
 
