@@ -112,15 +112,33 @@ A signature can include:
 
 Variable Scope
 
-/*Variablen haben einen Gültigkeitsbe- reich (scope)
+//Variablen haben einen Gültigkeitsbe- reich (scope)
 
 Global Scope
-This referes to the lifespan of the vaiable during runtime and is stored in persistant memory,
+/*This referes to the lifespan of the vaiable during runtime and is stored in persistant memory,
 these usually exists through out the running of the whole program
 
+Global Variables can be accessed from any part of the program.
+
+1. They are available through out the life time of a program.
+2. They are declared at the top of the program outside all of the functions or blocks.
+3. Declaring global variables: Global variables are usually declared outside of all of the functions and blocks, 
+   at the top of the program. They can be accessed from any portion of the program.
+
+
+*/
+
 Local Scope
-This is the lifespan of a variable within the memory and its created and used during runtime
+/*This is the lifespan of a variable within the memory and its created and used during runtime
 these usually die/cleared/deleted automatically once they are no longer needed.
+
+Variables defined within a function or block are said to be local to those functions.
+
+1. Anything between ‘{‘ and ‘}’ is said to inside a block.
+2. Local variables do not exist outside the block in which they are declared, 
+   i.e. they can not be accessed or used outside that block.
+3. Declaring local variables: Local variables are declared inside a block.
+
 */
 
 
