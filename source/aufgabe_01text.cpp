@@ -81,10 +81,10 @@ class Example                                 // Declaring a function
 
 
 
-/*Aufgabe 1.7--------------------------------------------------------------
+//Aufgabe 1.7--------------------------------------------------------------
 
-Function Signature. 
-*/
+Function Signature;
+
 
 int sum(int a, int b){ return a + b; }
 /*returnType nameOfFuction(typeofparameter paraName, typeofparameter paraName){body }
