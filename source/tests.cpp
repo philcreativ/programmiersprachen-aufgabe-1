@@ -112,19 +112,8 @@ int factorial(int n)
         return 1;
 }
 
-//Aufgabe 1.14 The Binomial Funktion----------------------------------
 
-double binomial(double nValue, double nValue2)
-{
-    double result;
-  	if( nValue2 == 1 )
-  		return nValue;
-     	result = ( factorial(nValue)) /( factorial(nValue2) * factorial((nValue - nValue2)) );
-       	nValue2 = result;
-       	return nValue2;
-   }
-
-//Augfabe 1.15 The Prime Number Fuction-------------------------------
+//Augfabe 1.14 The Prime Number Fuction-------------------------------
 
 bool is_prime(int a)
 {
@@ -239,22 +228,17 @@ TEST_CASE("cylinder","[cylinder]")
 
 TEST_CASE("factorial","[factorial]")
 {
-	REQUIRE( factorial(4) == 24 );
-	REQUIRE( factorial(6) == 720 );
-	REQUIRE( factorial(10) == 3628800 );
+
+  REQUIRE( factorial(1) == 1 );
+  REQUIRE( factorial(-10) == 1 );
+
+  REQUIRE( factorial(4) == 24 );
+  REQUIRE( factorial(6) == 720 );
+  REQUIRE( factorial(10) == 3628800 );
 }
 
 
 // Aufgabe 1.14 -------------------------------------------------------
-
-TEST_CASE("binomial","[binomial]")
-{
-	REQUIRE( binomial (5,3) == 10);
-	REQUIRE( binomial (5,4) == 5);
-	REQUIRE( binomial (10,3) == 120);
-}
-
-// Aufgabe 1.15 -------------------------------------------------------
 
 TEST_CASE("is_prime","[is_prime]")
 {
