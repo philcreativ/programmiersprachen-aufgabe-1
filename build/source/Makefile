@@ -111,6 +111,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+source/CMakeFiles/mile_to_kilometer.dir/rule:
+	cd /Users/phil/Git/Programmierungsprachen/01/programmiersprachen-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/mile_to_kilometer.dir/rule
+.PHONY : source/CMakeFiles/mile_to_kilometer.dir/rule
+
+# Convenience name for target.
+mile_to_kilometer: source/CMakeFiles/mile_to_kilometer.dir/rule
+
+.PHONY : mile_to_kilometer
+
+# fast build rule for target.
+mile_to_kilometer/fast:
+	cd /Users/phil/Git/Programmierungsprachen/01/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/mile_to_kilometer.dir/build.make source/CMakeFiles/mile_to_kilometer.dir/build
+.PHONY : mile_to_kilometer/fast
+
+# Convenience name for target.
 source/CMakeFiles/tests.dir/rule:
 	cd /Users/phil/Git/Programmierungsprachen/01/programmiersprachen-aufgabe-1/build && $(MAKE) -f CMakeFiles/Makefile2 source/CMakeFiles/tests.dir/rule
 .PHONY : source/CMakeFiles/tests.dir/rule
@@ -167,6 +182,33 @@ helloworld.cpp.s:
 	cd /Users/phil/Git/Programmierungsprachen/01/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/helloworld.dir/build.make source/CMakeFiles/helloworld.dir/helloworld.cpp.s
 .PHONY : helloworld.cpp.s
 
+mile_to_kilometer.cpp.o: mile_to_kilometer.cpp.cpp.o
+
+.PHONY : mile_to_kilometer.cpp.o
+
+# target to build an object file
+mile_to_kilometer.cpp.cpp.o:
+	cd /Users/phil/Git/Programmierungsprachen/01/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/mile_to_kilometer.dir/build.make source/CMakeFiles/mile_to_kilometer.dir/mile_to_kilometer.cpp.cpp.o
+.PHONY : mile_to_kilometer.cpp.cpp.o
+
+mile_to_kilometer.cpp.i: mile_to_kilometer.cpp.cpp.i
+
+.PHONY : mile_to_kilometer.cpp.i
+
+# target to preprocess a source file
+mile_to_kilometer.cpp.cpp.i:
+	cd /Users/phil/Git/Programmierungsprachen/01/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/mile_to_kilometer.dir/build.make source/CMakeFiles/mile_to_kilometer.dir/mile_to_kilometer.cpp.cpp.i
+.PHONY : mile_to_kilometer.cpp.cpp.i
+
+mile_to_kilometer.cpp.s: mile_to_kilometer.cpp.cpp.s
+
+.PHONY : mile_to_kilometer.cpp.s
+
+# target to generate assembly for a file
+mile_to_kilometer.cpp.cpp.s:
+	cd /Users/phil/Git/Programmierungsprachen/01/programmiersprachen-aufgabe-1/build && $(MAKE) -f source/CMakeFiles/mile_to_kilometer.dir/build.make source/CMakeFiles/mile_to_kilometer.dir/mile_to_kilometer.cpp.cpp.s
+.PHONY : mile_to_kilometer.cpp.cpp.s
+
 tests.o: tests.cpp.o
 
 .PHONY : tests.o
@@ -202,11 +244,15 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... mile_to_kilometer"
 	@echo "... tests"
 	@echo "... helloworld"
 	@echo "... helloworld.o"
 	@echo "... helloworld.i"
 	@echo "... helloworld.s"
+	@echo "... mile_to_kilometer.cpp.o"
+	@echo "... mile_to_kilometer.cpp.i"
+	@echo "... mile_to_kilometer.cpp.s"
 	@echo "... tests.o"
 	@echo "... tests.i"
 	@echo "... tests.s"

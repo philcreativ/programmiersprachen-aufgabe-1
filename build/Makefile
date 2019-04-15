@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named mile_to_kilometer
+
+# Build rule for target.
+mile_to_kilometer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 mile_to_kilometer
+.PHONY : mile_to_kilometer
+
+# fast build rule for target.
+mile_to_kilometer/fast:
+	$(MAKE) -f source/CMakeFiles/mile_to_kilometer.dir/build.make source/CMakeFiles/mile_to_kilometer.dir/build
+.PHONY : mile_to_kilometer/fast
+
+#=============================================================================
 # Target rules for targets named tests
 
 # Build rule for target.
@@ -144,6 +157,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... mile_to_kilometer"
 	@echo "... tests"
 	@echo "... helloworld"
 .PHONY : help
