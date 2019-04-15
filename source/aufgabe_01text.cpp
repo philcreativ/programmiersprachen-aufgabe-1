@@ -20,6 +20,10 @@ return 0;
 
 Aufgabe 1.5-----------------
 
+Definition 
+
+Intialisierung      
+Zuweisung           
 
 
 
