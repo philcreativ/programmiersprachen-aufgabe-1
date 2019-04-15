@@ -71,13 +71,41 @@ TEST_CASE("describe_gcd ","[gcd]")
 	REQUIRE( gcd(-1,1) == 0 );
 	REQUIRE( gcd(-283,-1) == 0 );
     
-    //Random Tests
+    //Assigned Tests
 	REQUIRE( gcd(2,4) == 2 );
 	REQUIRE( gcd(6,9) == 3 );
 	REQUIRE( gcd(3,7) == 1 );
 } 
 
 
+// Aufgabe 1.9 -------------------------------------------------------
+
+TEST_CASE("checksum","[checksum]")
+{
+
+	//Base Test
+	REQUIRE( checksum(1) == 1 );
+	REQUIRE( checksum(-1) == -1 );
+	REQUIRE( checksum(0) == 0 );
+
+	//Assigned Test
+	REQUIRE( checksum(112601) == 11 );
+	REQUIRE( checksum(-112601) == -11 );
+	REQUIRE( checksum(123456) == 21 );
+	REQUIRE( checksum(000000) == 0 );
+}
+
+
+
+
+
+
+
+
+
+
+
+// ************************* MAIN FUNCTION****************************//
 
 int main(int argc, char* argv[])
 {
