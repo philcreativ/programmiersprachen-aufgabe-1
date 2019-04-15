@@ -42,13 +42,17 @@ int gcd(int a, int b)
 
 
 
-// -------------------------THE TEST CASES----------------------------
+// Aufgabe 1.8 ----------------------------------------THE TEST CASES
 
 TEST_CASE("describe_gcd ","[gcd]")
 {
 	REQUIRE( gcd(2,4) == 2 );
 	REQUIRE( gcd(6,9) == 3 );
 	REQUIRE( gcd(3,7) == 1 );
+
+	REQUIRE( gcd(1,1) == 2 );
+	REQUIRE( gcd(2,4) == 2 );
+	REQUIRE( gcd(2,4) == 2 );
 } 
 
 
