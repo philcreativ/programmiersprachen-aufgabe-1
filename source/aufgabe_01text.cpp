@@ -95,4 +95,17 @@ The return value is not part of a function's signature.
 
 */
 
+Variable Scope
+
+/*Variablen haben einen Gültigkeitsbe- reich (scope)
+
+Global Scope
+This referes to the lifespan of the vaiable during runtime and is stored in persistant memory,
+these usually exists through out the running of the whole program
+
+Local Scope
+This is the lifespan of a variable within the memory and its created and used during runtime
+these usually die/cleared/deleted automatically once they are no longer needed.
+*/
+
 
