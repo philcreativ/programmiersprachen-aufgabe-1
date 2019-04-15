@@ -73,6 +73,21 @@ int sumMultiples(int a, int b)
 
 
 
+//Aufgabe 1.11 Fraction Anteil---------------------------------------
+
+int fract(float frac)
+{
+    double integer, value = frac, fraction = modf(value, &integer);
+    return fraction;
+}
+
+
+
+
+
+
+
+
 
 
 // *************************THE TEST CASES****************************//
@@ -82,16 +97,16 @@ int sumMultiples(int a, int b)
 
 TEST_CASE("describe_gcd ","[gcd]")
 {
-    //Base Test
-	REQUIRE( gcd(1,1) == 1 );
-	REQUIRE( gcd(0,0) == 0 );
-	REQUIRE( gcd(-1,1) == 0 );
-	REQUIRE( gcd(-283,-1) == 0 );
+  //Base Test
+  REQUIRE( gcd(1,1) == 1 );
+  REQUIRE( gcd(0,0) == 0 );
+  REQUIRE( gcd(-1,1) == 0 );
+  REQUIRE( gcd(-283,-1) == 0 );
     
-    //Assigned Tests
-	REQUIRE( gcd(2,4) == 2 );
-	REQUIRE( gcd(6,9) == 3 );
-	REQUIRE( gcd(3,7) == 1 );
+  //Assigned Tests
+  REQUIRE( gcd(2,4) == 2 );
+  REQUIRE( gcd(6,9) == 3 );
+  REQUIRE( gcd(3,7) == 1 );
 } 
 
 
@@ -119,14 +134,16 @@ TEST_CASE("sumMultiples","[sumMultiples]")
 {
 
   //Base Test
-  REQUIRE( checksum(1) == 1 );
-  REQUIRE( checksum(-1) == -1 );
-  REQUIRE( checksum(0) == 0 );
+  REQUIRE( sumMultiples(1,1) == 500500);
+  REQUIRE( sumMultiples(-1,-1) == 500500);
+  //REQUIRE( sumMultiples(0,0) == 0 );
 
   //Assigned Test
   REQUIRE( sumMultiples (3,5) == 33165);
   REQUIRE( sumMultiples (1,5) == 100500);
   REQUIRE( sumMultiples (1,3) == 166833);
+  REQUIRE( sumMultiples (-3,-5) == 33165);
+
 
 }
 
