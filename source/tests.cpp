@@ -128,7 +128,7 @@ TEST_CASE("checksum","[checksum]")
 }
 
 
-// Aufgabe 1.9 -------------------------------------------------------
+// Aufgabe 1.10 -------------------------------------------------------
 
 TEST_CASE("sumMultiples","[sumMultiples]")
 {
@@ -148,7 +148,13 @@ TEST_CASE("sumMultiples","[sumMultiples]")
 }
 
 
-
+// Aufgabe 1.11 -------------------------------------------------------
+TEST_CASE("fract","[fract]")
+{
+	REQUIRE(7.009999 == Approx( 7.01 ).epsilon(0.001));
+	REQUIRE(0.009999 == Approx( 0.01 ).epsilon(0.001));
+	REQUIRE(1.9999 == Approx( 2.0 ).epsilon(0.001));
+}
 
 
 
