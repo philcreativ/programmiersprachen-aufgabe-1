@@ -1,5 +1,9 @@
 #define CATCH_CONFIG_RUNNER
 #include <catch.hpp>
+#include <cmath>
+
+//Const variables
+const int Two = 2;
 
 
 // Aufgabe 1.3 
@@ -83,9 +87,19 @@ int fract(float frac)
 
 
 
+//Aufgabe 1.12 The Volume and Area of a Cylinder----------------------
 
+float volume(int r, int h)
+{ 
+  float volume = (M_PI * (r * r) * h);
+  return volume;
+}
 
-
+float area(int r, int h)
+{
+	float area = (Two * M_PI * r * h) + (Two * M_PI * (r * r));
+	return area;
+}
 
 
 
@@ -149,15 +163,27 @@ TEST_CASE("sumMultiples","[sumMultiples]")
 
 
 // Aufgabe 1.11 -------------------------------------------------------
+
 TEST_CASE("fract","[fract]")
 {
-	REQUIRE(7.009999 == Approx( 7.01 ).epsilon(0.001));
-	REQUIRE(0.009999 == Approx( 0.01 ).epsilon(0.001));
-	REQUIRE(1.9999 == Approx( 2.0 ).epsilon(0.001));
+
+  REQUIRE(-0.0099997 == Approx( -0.01 ).epsilon(0.001));
+  REQUIRE(99997 == Approx( 100000 ).epsilon(3));
+  REQUIRE(0.1 == Approx( 0 ).epsilon(0.1));
+
+  REQUIRE(7.009999 == Approx( 7.01 ).epsilon(0.001));
+  REQUIRE(0.009999 == Approx( 0.01 ).epsilon(0.001));
+  REQUIRE(1.9999 == Approx( 2.0 ).epsilon(0.001));
+  
 }
 
+// Aufgabe 1.12 -------------------------------------------------------
 
-
+TEST_CASE("cylinder","[cylinder]")
+{
+  REQUIRE( volume (3,5) == 141.37167f);
+  REQUIRE( area (3,5) == 150.79645f);
+}
 
 
 
