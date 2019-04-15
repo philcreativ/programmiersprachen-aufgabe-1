@@ -181,8 +181,21 @@ TEST_CASE("fract","[fract]")
 
 TEST_CASE("cylinder","[cylinder]")
 {
+  REQUIRE( volume (0,0) == 0);
+  REQUIRE( area (0,0) == 0);
+
+  REQUIRE( volume (1,1) == Approx( 3.14159f) );
+  REQUIRE( area (1,1) == Approx(12.56637f) );
+
+  REQUIRE( volume (-3,-5) == -141.37167f);
+  REQUIRE( area (-3,-5) == Approx(150.79645f));
+
+
+
   REQUIRE( volume (3,5) == 141.37167f);
   REQUIRE( area (3,5) == 150.79645f);
+
+
 }
 
 
