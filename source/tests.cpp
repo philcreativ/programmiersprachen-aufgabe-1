@@ -100,19 +100,35 @@ TEST_CASE("describe_gcd ","[gcd]")
 TEST_CASE("checksum","[checksum]")
 {
 
-	//Base Test
-	REQUIRE( checksum(1) == 1 );
-	REQUIRE( checksum(-1) == -1 );
-	REQUIRE( checksum(0) == 0 );
+  //Base Test
+  REQUIRE( checksum(1) == 1 );
+  REQUIRE( checksum(-1) == -1 );
+  REQUIRE( checksum(0) == 0 );
 
-	//Assigned Test
-	REQUIRE( checksum(112601) == 11 );
-	REQUIRE( checksum(-112601) == -11 );
-	REQUIRE( checksum(123456) == 21 );
-	REQUIRE( checksum(000000) == 0 );
+  //Assigned Test
+  REQUIRE( checksum(112601) == 11 );
+  REQUIRE( checksum(-112601) == -11 );
+  REQUIRE( checksum(123456) == 21 );
+  REQUIRE( checksum(000000) == 0 );
 }
 
 
+// Aufgabe 1.9 -------------------------------------------------------
+
+TEST_CASE("sumMultiples","[sumMultiples]")
+{
+
+  //Base Test
+  REQUIRE( checksum(1) == 1 );
+  REQUIRE( checksum(-1) == -1 );
+  REQUIRE( checksum(0) == 0 );
+
+  //Assigned Test
+  REQUIRE( sumMultiples (3,5) == 33165);
+  REQUIRE( sumMultiples (1,5) == 100500);
+  REQUIRE( sumMultiples (1,3) == 166833);
+
+}
 
 
 
