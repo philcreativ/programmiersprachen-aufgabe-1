@@ -258,9 +258,13 @@ TEST_CASE("binomial","[binomial]")
 
 TEST_CASE("is_prime","[is_prime]")
 {
+	REQUIRE( is_prime(-5) == true);
 	REQUIRE( is_prime(5) == true );
 	REQUIRE( is_prime(149) == true );
 	REQUIRE( is_prime(10) == false );
+	REQUIRE( is_prime(2741) == true);
+	REQUIRE( is_prime(27374393) == false);
+	REQUIRE( is_prime(200000) == false);
 }
 
 
