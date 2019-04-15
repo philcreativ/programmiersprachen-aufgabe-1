@@ -2,8 +2,9 @@
 #include <catch.hpp>
 
 
-//Aufgabe 1.3 kleinste Zahl, die durch die Zahlen 1 
-//bis 20 teilbar Funktion Implementation ---------------------------
+// Aufgabe 1.3 
+// kleinste Zahl, die durch die Zahlen 1 
+// bis 20 teilbar Funktion Implementation ---------------------------
 
 bool teilbar_durch_alle(int num)
 {
@@ -23,7 +24,8 @@ bool teilbar_durch_alle(int num)
 
 
 
-//Aufgabe 1.8 GCD Funktion Implementation ---------------------------
+// Aufgabe 1.8 
+// GCD Funktion Implementation --------------------------------------
 
 int gcd(int a, int b) 
 {
@@ -42,17 +44,29 @@ int gcd(int a, int b)
 
 
 
-// Aufgabe 1.8 ----------------------------------------THE TEST CASES
+
+
+
+
+
+
+// *************************THE TEST CASES****************************//
+
+
+// Aufgabe 1.8 -------------------------------------------------------
 
 TEST_CASE("describe_gcd ","[gcd]")
 {
+    //Base Test
+	REQUIRE( gcd(1,1) == 1 );
+	REQUIRE( gcd(0,0) == 0 );
+	REQUIRE( gcd(-1,1) == 0 );
+	REQUIRE( gcd(-283,-1) == 0 );
+    
+    //Random Tests
 	REQUIRE( gcd(2,4) == 2 );
 	REQUIRE( gcd(6,9) == 3 );
 	REQUIRE( gcd(3,7) == 1 );
-
-	REQUIRE( gcd(1,1) == 2 );
-	REQUIRE( gcd(2,4) == 2 );
-	REQUIRE( gcd(2,4) == 2 );
 } 
 
 
