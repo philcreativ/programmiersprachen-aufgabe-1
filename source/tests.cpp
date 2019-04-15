@@ -110,13 +110,13 @@ TEST_CASE("checksum","[checksum]")
 int main(int argc, char* argv[])
 {
 
-int zahl = 1;
-while(! teilbar_durch_alle(zahl))
-  {
-    ++zahl;
-  }
+  int zahl = 1;
+   while(! teilbar_durch_alle(zahl))
+    {
+      ++zahl;
+    }
 
-std::cout << "\nDie kleinste Zahl, die durch die Zahlen 1 bis 20 teilbar ist : " << zahl << std::endl << std::endl;
+   std::cout << "\nDie kleinste Zahl, die durch die Zahlen 1 bis 20 teilbar ist : " << zahl << std::endl << std::endl;
 
   return Catch::Session().run(argc, argv);
 }
