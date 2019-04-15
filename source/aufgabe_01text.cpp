@@ -18,21 +18,27 @@ return 0;
 
 
 
-/*Aufgabe 1.5-----------------
+Aufgabe 1.5-----------------
 
 Definition 
 
 Intialisierung   
-
+/*
 Initialization means telling compiler to allocate a memory to the initialized
 variable so that compiler can know that this variable is going to store some value.
 
-Example: */ extern int a
+Example: */ 
+
+extern int a;
 
 
 Zuweisung           
 
+/*
 
+Example */ 
+
+int b = 20;  a = b;
 
 
 
