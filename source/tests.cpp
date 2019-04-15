@@ -43,8 +43,9 @@ int gcd(int a, int b)
 
 //Aufgabe 1.9 CheckSum  Funktion Implementation---------------------- 
 
-int checksum(int a){ 
-	int sum = 0;
+int checksum(int a)
+{ 
+  int sum = 0;
     while (a != 0)
     {
         sum += a % 10;
@@ -53,6 +54,22 @@ int checksum(int a){
     return sum;
 }
 
+
+
+//Aufgabe 1.10 sumMultiple Funktion Implementation ------------------
+
+int sumMultiples(int a, int b)
+{ 
+  int sum = 0;
+   for( int i = 1; i <= 1000; i = i + 1 )
+   {			       
+     if (i%a==0 && i%b==0 )
+      {
+       sum = sum + i;
+      }
+    }
+  return sum;
+}
 
 
 
