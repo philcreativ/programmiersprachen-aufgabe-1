@@ -35,10 +35,13 @@ extern int a;
 Zuweisung           
 
 /*
-
+This referes to storing a legal value(wert) in a intialised allocated memory.
+This can only be done after intialisation 
 Example */ 
 
 int b = 20;  a = b;
+
+
 
 
 
